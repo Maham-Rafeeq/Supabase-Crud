@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Supabase Authentication</title>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/css/bootstrap.min.css">
+    <link rel="stylesheet" href="./style.css">
+</head>
+<body>
+    <!-- form -->
+    <div class="main">
+   <form action="#" id="userform" method="get">
+    <input type="text" name="user-firstname"  placeholder="USER NAME">
+    <input type="text" name="user-email"  placeholder="USER EMAIL">
+    <input type="number" name="user-password"  placeholder="USER PASSWORD">
+    <button type="submit">Submit</button>
+   </form>
+   </div>
+   <!-- card -->
+   <div class="mt-5 gap-5 p-3 text-white d-flex flex-wrap justify-content-around w-100" id="div-wrapper">
+    
+   </div>
+   <!-- card-end -->
+
+    <!-- update form -->
+      <div id="modal" class="modal-hidden">
+    <div class="modal-box">
+      <h2>Update Task</h2>
+
+      <label>Updated Name</label>
+      <input type="text" id="update-name" />
+
+      <label>Updated Email</label>
+      <input type="email" id="update-email" />
+
+      <label>Updated Password</label>
+      <input type="number" id="update-password" />
+
+
+      <div class="modal-btns">
+        <button onclick="saveUpdate()">Save</button>
+        <button onclick="closeModal()">Cancel</button>
+      </div>
+    </div>
+  </div>
+     <script src="./app.js" type="module"></script>
+     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/js/bootstrap.bundle.min.js" integrity="sha384-FKyoEForCGlyvwx9Hj09JcYn3nv7wiPVlz7YYwJrWVcXK/BmnVDxM+D2scQbITxI" crossorigin="anonymous"></script>
+</body>
+</html>
