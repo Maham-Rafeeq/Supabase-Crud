@@ -43,7 +43,7 @@ return
 
   data.forEach(element => {
    wrapper.innerHTML += `
-    <div class="card col-5">
+    <div class="card col-12 col-md-6">
             <h5 class="card-header">Your Name : ${element.user_name}</h5>
             <div class="card-body">
                 <h5 class="card-title">Your Email : ${element.user_email}</h5>
@@ -113,3 +113,4 @@ alert("succesfully deleted")
 location.reload();
 }
 window.updateinfo =updateinfo;
+
